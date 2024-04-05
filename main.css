@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto' , sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header{
+    background-color: rgb(224, 157, 1);
+    padding: 16px 0;
+    color: #fff;
+    display: flex;
+    border-bottom: 16px solid rgb(244, 171, 0);
+    justify-content: center;
+    font-style: italic;
+}
+
+header img {
+    height: 36px;
+    margin-right: 16px;
+}
+
+header button {
+    margin-left: 16px;
+}
+
+form {
+    background-color: #fff;
+    padding: 24px 0;
+    text-align: center;
+    display: none;
+}
+
+form h2 {
+    margin-bottom: 16px;
+}
+
+input, 
+button {
+    padding: 8px;
+}
+
+button{
+    background-color: rgb(254, 245, 107);
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    color:black;
+}
+
+#botao-adicionar {
+    background-color: #009432;
+    color: #ffff;    
+}
+
+#botao-cancelar {
+    background-color: red;
+    color: #ffff;
+}
+
+table {
+    width: 100%;
+}
+
+table th {
+    border-bottom: 2px solid #000;
+    padding: 16px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+table td {
+    text-align: center;
+    font-size: 18px;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(0,0,0, 0.1);
+}
+
+table td img {
+    width: 30px;
+}
+
+.concluir {
+    background-color: #009432;
+    color: #ffff;
+    padding: 8px
+}
+
+.cancelar {
+    background-color: red;
+    color: #ffff;
+    padding: 8px
+}
+
+.concluida {
+    font-style: italic;
+    text-decoration: line-through;
+}
+
+footer{
+    margin-top: auto;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+    width: 100%;
+}

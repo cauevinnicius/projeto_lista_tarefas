@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="shortcut icon" href="./imagens/logo-headerh1.png">
+    <title>Bloco de Tarefas</title>
+</head>
+<body>
+    <header>
+        <img src="./imagens/logo-headerh1.png">
+        <h1>Bloco de Tarefas</h1>
+        <button type="button" id="botao-nova-tarefa">Nova tarefa +</button>
+    </header>
+    <form id="form-nova-tarefa">
+        <h2>Inserir nova tarefa</h2>
+        <input type="text" id="descricao-tarefa" required placedholder="Descrição da tarefa">
+        <button type="submit" id="botao-adicionar">Adicionar</button>
+        <button type="reset" id="botao-cancelar">Cancelar</button>
+    </form>
+    <table cellspacing="0">
+        <thead>
+            <tr>
+                <th>Lista de tarefas</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <footer> © 2024 - Todos os direitos reservados - @author cauevinnicius</footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="./main.js"></script>
+</html>
