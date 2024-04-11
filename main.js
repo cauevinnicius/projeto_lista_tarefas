@@ -1,3 +1,5 @@
+// Com jQuery, inicia-se com $
+// (document) refere-se ao HTML
 $(document).ready(function() {
     $('header button').click(function (){
         $('form').slideDown();
@@ -9,29 +11,16 @@ $(document).ready(function() {
 
     $('form').on('submit', function(e){
         e.preventDefault();
-        adicionaTarefa();
+        const nomeDaTarefa = $('input').val();
+        // Aspas servem para concatenação de valores
+        const novaTarefa = $(`<li>${nomeDaTarefa}</li>`);
+
+        $(novaTarefa).appendTo('ul');
+        $('input').val('');
     });
 
-    $('tbody').on('click', '.concluir', function() {
-        $(this).closest('tr').addClass('concluida');
-        $(this).closest('tr').find('.descricao').addClass('concluida');
-        $(this).closest('tr').find('.descricao').prop('contenteditable', 'false');
-    });
-
-    $('tbody').on('click', '.cancelar', function() {
-        $(this).closest('tr').remove();
-    });
+    $('ul').on('click', 'li', function(e){
+        e.preventDefault();
+        $(this).toggleClass('riscarTarefa');
+    })
 });
-
-function adicionaTarefa() {
-    const descricao = $('#descricao-tarefa').val();
-    if (descricao.trim() === '') {
-        alert('Por favor, insira uma descrição para a tarefa.');
-        return;
-    }
-
-    const novaLinha = $('<tr><td class="descricao">' + descricao + '</td><td><button class="concluir">Concluir</button><button class="cancelar">Cancelar</button></td></tr>');
-    $('tbody').append(novaLinha);
-    $('#descricao-tarefa').val('');
-    
-}

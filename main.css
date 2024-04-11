@@ -63,41 +63,16 @@ button{
     color: #ffff;
 }
 
-table {
-    width: 100%;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    font-size: 20px;
 }
 
-table th {
-    border-bottom: 2px solid #000;
-    padding: 16px;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-table td {
-    text-align: center;
-    font-size: 18px;
-    padding: 16px 0;
-    border-bottom: 1px solid rgba(0,0,0, 0.1);
-}
-
-table td img {
-    width: 30px;
-}
-
-.concluir {
-    background-color: #009432;
-    color: #ffff;
-    padding: 8px
-}
-
-.cancelar {
-    background-color: red;
-    color: #ffff;
-    padding: 8px
-}
-
-.concluida {
+.riscarTarefa {
     font-style: italic;
     text-decoration: line-through;
 }
